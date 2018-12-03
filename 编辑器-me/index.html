@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="contents">
+			<div class="textarea deit_t" id="deit_t" style="display: none;">
+				<div class="to_list">
+					<span class="find">字体：
+						<select id="select-family">
+							<option value="SimSun">宋体</option>
+							<option value="SimHei">黑体</option>
+							<option value="Microsoft Yahei">微软雅黑</option>
+							<option value="Microsoft JhengHei">微软正黑体</option>
+							<option value="KaiTi">楷体</option>
+							<option value="NSimSun">新宋体</option>
+							<option value="FangSong">仿宋</option>
+							<option value="Wawati SC">娃娃体-简</option>
+						</select>
+					</span>
+					<span class="find">字号：
+						<select id="select-fonts">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+					</span>
+					<span class="find">颜色：
+					<a href="javascript:;">
+						<div class="color_auto" id="color_auto">请选择
+							<span id="color_action" style="background: #000000;"></span>
+							<div class="color_list" id="color_list" style="display: none;">
+								<span style="background:#01f345;"></span>
+								<span style="background:#9847ac;"></span>
+								<span style="background:#111d15;"></span>
+								<span style="background:#505250;"></span>
+								<span style="background:#899737;"></span>
+								<span style="background:#f301aa;"></span>
+								<span style="background:#a4a8a3;"></span>
+								<span style="background:#02300f;"></span>
+								<span style="background:#7e01f3;"></span>
+							</div>
+						</div>
+					</a>
+					</span>
+				</div>
+				<div class="to_list2">
+					<a href="javascript:;"><span value="加粗" id="CB" class="">B</span></a>
+					<a href="javascript:;"><span value="下划线" id="CU">U</span></a>
+					<a href="javascript:;"><span value="倾斜" id="CI">I</span></a>
+				</div>
+				<div class="to_operate">
+					<p contenteditable="true" id="edit_t"></p>
+					<input type="button" value="保存" id="save">
+				</div>
+			</div>
+			<div class="textarea deit_f" id="deit_f">
+				<div class="to_operate">
+					<p id="edit_f">ange对象创建：IE可以用不同标签来创建不同选择区域的range对象。比如用body创建range对象，那么range对象的选择区域就是整个页面了：获取整个body的range:document.body.createTextRange();目前IE range对象支持由body,input,button,textarea创建的range对象
+简单的选择range对象：range.findText（”查找的文字“)，返回一个bool值，true为找到值，false为没找到;例如上面的例子”  公司(SNCF) “  range.findText('公司(SNCF)'); 返回true，就可以使用execCommad操作对象了；注意：使用这个方法时候要注意range对象是由哪个标签创建的。比如Button创建的range对象要查找由textarea创建的range对象在textarea中的值，肯定是找不到的；
+复杂的选择:IE range复杂的选择是通过moveStart,moveEnd来前后移动range选区?</p>
+					<input type="button" value="编辑" id="edit">
+					<input type="button" value="删除" id="delete">
+					<input type="button" value="放大" id="enlarge">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

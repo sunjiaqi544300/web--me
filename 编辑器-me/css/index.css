@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+a{
+	list-style: none;
+	text-decoration:none;
+}
+.contents{
+	color: #000;
+}
+.textarea{
+	border-radius: 10px;
+    box-shadow: 1px 1px 11px 1px #ccc;
+    background-color: rgb(255,250,234);
+    padding: 15px;
+    box-sizing: border-box;
+	width: 98%;
+	height: 500px;
+	padding: 5px;
+	margin: 0 auto;
+	font-size: 16px;
+	background: burlywood;
+}
+.to_list .find{
+	margin: 0 10px;
+	clear: both;
+}
+select{
+	min-width: 80px;
+	padding: 0 3px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 10px;
+	background: bisque;
+}
+.color_auto{
+	display: inline-block;
+	width: 75px;
+	padding: 0 3px;
+	height: 25px;
+	line-height: 25px;
+	background: bisque;
+	border-radius: 10px;
+	position: relative;
+	font-size: 14px;
+	color: #000;
+}
+.color_auto>span{
+	position: absolute;
+	right: 6px;
+	top: 3px;
+	width: 19px;
+	height: 19px;
+	border-radius: 5px;
+}
+.color_list{
+	position: absolute;
+	left: 0px;
+	top: 26px;
+	width: 115px;
+	padding: 0 3px;
+	height: 60px;
+	background:bisque;
+	border-radius: 10px;
+}
+.color_list>span{
+	display: inline-block;
+	margin-top: 5px;
+	width: 19px;
+	height: 19px;
+	border-radius: 5px;  
+}
+.to_list2{        
+	margin:10px 0 30px 6px;
+} 
+.to_list2 span{
+	display: inline-block;
+	min-width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border: 1px solid aliceblue;
+	color: #000;
+	margin: 0 5px;
+	border-radius: 10px;
+	background: bisque;
+}
+.to_list2 span.act{
+	background: #000;
+	color: bisque;
+}
+.to_operate{
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid #CCCCCC;
+}
+.to_operate p{
+	height: 300px;
+	overflow: auto;
+	padding: 10px;
+	outline-style: none;
+	/* border: 1px solid burlywood; */
+	border-radius: 10px;
+}
+.to_operate input{
+	float: right;
+	outline-style: none;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 5px;
+	padding: 0 5px;
+	border-radius: 3px;
+}
+.deit_t p{
+	height: 340px;    
+}
+.deit_f{
+	height: 300px;
+	display: block;
+}
+.deit_f p{
+	height: 230px;     
+}  
